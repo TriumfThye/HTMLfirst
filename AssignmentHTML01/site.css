@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(143, 166, 167);
+    font-family: "Arial", sans-serif;
+    max-width: 1024px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'main section left left right right'
+    'footer footer footer footer footer footer';
+}
+* {
+    padding: 0%;
+    margin: 0%;
+}
+ul , ol {
+    list-style-type: none;
+}
+img {
+    padding-left: 12px;
+}
+header { 
+    background-color: rgb(185, 160, 80);
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "headline links";
+  
+}
+header h1 {
+    text-align: center;
+    line-height: 60px;
+    grid-area: headline;
+}
+main { 
+    background-color: rgb(145, 160, 70);
+    grid-area: main, section; 
+    margin: center;
+}
+p, h3 {
+    padding: 10px;
+    margin: 10px;
+}
+section {
+    background-color: rgb(165, 160, 50);
+    line-height: 100px;
+    width: 1024px;
+    min-height: 300px;
+}
+h2 {
+    margin-left: 150px;
+    margin-top:50px;
+    line-height: 60px;
+    text-transform:uppercase;
+}
+form {
+    margin-left: 150px;
+    margin-top:20px;
+    line-height: 0px;
+}
+aside { 
+    grid-area: right; 
+    background-color: rgb(165, 160, 50);
+    text-align: center;
+}
+aside h2, h4 {
+    padding: 20px;
+}
+header nav, header nav, header ul, header ul li, header a {         
+     display: inline-block;
+}
+header a {
+    text-decoration: none;
+    line-height: 60px;
+}
+header nav {
+    display: grid;
+    grid-template-areas: "a b c";
+}
+header ul {
+grid-area: a;
+}
+#one {
+    font-size: 20px;
+    background-color: rgb(155, 133, 40);
+}
+#two {
+    font-size: 20px;
+    background-color: rgb(165, 133, 40);
+}
+#three {
+    font-size: 20px;
+    background-color: rgb(175, 133, 40);
+}
+#four {
+    font-size: 20px;
+    grid-area: c;
+    text-align: center;
+    background-color: rgb(185, 133, 40);
+}
+#five {
+    margin-left: 50px;
+    padding: 5px;
+    grid-area: main;
+    display: inline-block;
+    width: 40%;          
+    background-color: rgb(145, 160, 120);
+    vertical-align: top;
+    border: 1px solid black;
+}
+#six {           
+    margin-right: 10px ;
+    padding: 10px;
+    margin-bottom: 10px;
+    grid-area: left;
+    display: inline-block;
+    width: 40%;        
+    background-color: rgb(145, 160, 140);
+    vertical-align: top;
+    border: 1px solid black;
+}
+footer {
+    grid-area: footer;
+    background-color: rgb(202, 161, 73);
+    height: 60px;
+    line-height: 30px;
+    text-align: center;
+}
